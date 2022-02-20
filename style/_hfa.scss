@@ -1,0 +1,21 @@
+@import '_variables.scss';
+
+.main {
+  &__link:hover, &__link:focus, &__link:active {
+    color: $highlightColor;
+  }
+
+  &__buy-btn:hover, &__buy-btn:focus, &__buy-btn:active {
+    background-color: $hoverColor;
+  }
+
+  &__details:hover, &__details:focus, &__details:active {
+    color: $hoverColor;
+  }
+}
+
+.footer {
+  &__month:hover, &__month:focus, &__month:active {
+    color: $highlightColor;
+  }
+}

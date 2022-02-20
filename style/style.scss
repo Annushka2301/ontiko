@@ -1,0 +1,62 @@
+@import '_footer.scss';
+@import '_main.scss';
+@import '_variables.scss';
+@import '_hfa.scss';
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  outline: none;
+}
+
+@font-face {
+	font-family: 'TT Travels';
+	src: local('TT Travels'),
+		url('../fonts/TTTravels-Regular.woff2') format('woff2'),
+		url('../fonts/TTTravels-Regular.woff') format('woff');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TT Travels';
+	src: local('TT Travels'),
+		url('../fonts/TTTravels-Medium.woff2') format('woff2'),
+		url('../fonts/TTTravels-Medium.woff') format('woff');
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+
+a, p, h1, h2, button, ul, li, div {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-family: $fontFam;
+  font-style: normal;
+  font-size: 16px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a, button {
+  cursor: pointer;
+  transition-property: color, background-color;
+  transition: .3s ease;
+}
+
+.container {
+  max-width: 1790px;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  overflow: hidden;
+}
+
+

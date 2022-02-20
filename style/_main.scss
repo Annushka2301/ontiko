@@ -1,0 +1,140 @@
+@import '_variables.scss';
+
+.main {
+  &__events{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 133px;
+    padding-bottom: 183px;
+  }
+
+  &__event {
+    position: relative;
+    width: calc((100% - 171px) / 4);
+    margin-bottom: 50px;
+    padding: 25px 30px 167px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+  }
+
+  &__dates {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__logo {
+    height: 90px;
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  &__name {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  &__descr {
+    margin-bottom: 18px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__bottom {
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    right: 30px;
+  }
+
+  &__location {
+    display: block;
+    padding-left: 22px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 17px;
+    background-image: url(../img/location.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+
+  &__link {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 25px;
+    padding-left: 22px;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+    color: $blackColor;
+    background-image: url(../img/link.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+    overflow: hidden;
+  }
+
+  &__buy-btn {
+    padding: 8px 20px;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: $whiteColor;
+    background-color: $highlightColor;
+  }
+
+  &__details {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: $highlightColor;
+  }
+}
+
+@media (max-width: 1705px) {
+  .main {
+    &__event {
+      width: calc((100% - 114px) / 3);
+    }
+  }
+}
+
+@media (max-width: 1288px) {
+  .main {
+    &__event {
+      width: calc((100% - 57px) / 2);
+    }
+  }
+}
+
+
+@media (max-width: 458px) {
+  .main {
+    &__event {
+      padding-bottom: 40px;
+      width: 100%;
+    }
+    &__bottom {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      bottom: 0;
+      left: 0;
+    }
+    &__buy-btn {
+      justify-self: center;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    &__details {
+      justify-self: center;
+      text-align: center;
+    }
+  }
+}

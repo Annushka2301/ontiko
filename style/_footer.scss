@@ -1,0 +1,106 @@
+@import '_variables.scss';
+
+.footer {
+  background-color: $backgroundColor;
+
+  &__container {
+    position: relative;
+    padding: 57px 0 45px;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 0;
+    right: -67px;
+  }
+
+  &__conts {
+    position: relative;
+    max-width: 589px;
+    margin-bottom: 76px;
+    color: $whiteColor;
+    line-height: 22px;
+    z-index: 10;
+  }
+
+  &__cont-title {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &__cont-inf {
+    margin-bottom: 22px;
+  }
+
+  &__bottom {
+    display: flex;
+  }
+
+  &__year {
+    margin-left: 24px;
+    margin-right: 82px;
+    padding-top: 5px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    color: $whiteColor;
+  }
+
+  &__months {
+    position: relative;
+    width: calc(100% - 325px);
+    padding-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid rgba(255, 255, 255, 0.35);
+  }
+
+  &__month {
+    color: $whiteColor;
+  }
+
+  &__month:not(:first-child) {
+    margin-left: 50px;
+  }
+
+  &__marker {
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 10px;
+    background-color: $whiteColor;
+    border-radius: 10px;
+    left: 345px;
+    top: 352px;
+    transition: transform .3s ease;
+  }
+
+}
+
+@media (max-width: 1288px) {
+  .footer {
+    &__months {
+      display: none;
+    }
+    &__marker {
+      display: none;
+    }
+    &__year {
+      display: none;
+    }
+
+    &__logo {
+      width: calc(100% - 100px);
+    }
+  }
+}
+
+@media (max-width: 458px) {
+  .footer {
+    &__logo {
+      width: calc(100% - 10px);
+    }
+  }
+}
+
