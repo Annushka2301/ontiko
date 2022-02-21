@@ -55,16 +55,4 @@ async function getEventsList() {
   });
 };
 
-getEventsList();
-
-document.addEventListener('DOMContentLoaded', function() {
-  const months = document.querySelectorAll('.footer__month');
-
-  months.forEach(month => {
-    month.addEventListener('click', function() {
-
-    });
-  })
-
-});
 
